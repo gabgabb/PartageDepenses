@@ -11,58 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32334b4f-7265-4e78-abef-18cfd9ef36c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ChatonsBDD_21.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PartageDepense.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_31_10_2020_00_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_31_10_2020_00_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PartageDepenses" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/DepenseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/EvenementController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MenuController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ParticipantsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Depense.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Evenement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Participants.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/DepenseFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/DepenseModifierType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/DepenseSupprimerType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/EvenementFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/EvenementSupprimerType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ParticipantsFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ParticipantsModifierType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ParticipantsSupprimerType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/DepenseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/EvenementRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ParticipantsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/depense/ajouter.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/depense/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/depense/modifier.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/depense/supprimer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/evenement/ajouter.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/evenement/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/evenement/modifier.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/evenement/supprimer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/menu/_menu.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/participants/ajouter.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/participants/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/participants/modifier.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/participants/supprimer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/preload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ChatonsBDD_21.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/evenement/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/evenement/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,7 +207,9 @@
       <workItem from="1605035041557" duration="16060000" />
       <workItem from="1605106076004" duration="5502000" />
       <workItem from="1605216472146" duration="810000" />
-      <workItem from="1605282608212" duration="10917000" />
+      <workItem from="1605282608212" duration="11283000" />
+      <workItem from="1605300753670" duration="244000" />
+      <workItem from="1605301312106" duration="195000" />
     </task>
     <servers />
   </component>
