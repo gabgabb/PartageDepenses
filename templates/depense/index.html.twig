@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dépense entre amis !{% endblock %}
+
+{% block body %}
+    <h1>Liste des dépenses en cours de {{ participants.nom }}</h1>
+    <table class="table table-striped table-borderless">
+        <tr>
+            <th>#</th>
+            <th>Nom de la dépense</th>
+            <th> Montant </th>
+            <th> Description </th>
+            <th> Actions </th>
+
+        </tr>
+        {% for d in depense  %}
+            <tr>
+                <td>{{ d.id}}</td>
+                <td>{{ d.nom}}</td>
+                <td>{{  d.montant }}</td>
+                <th> {{ d.description }}</th>
+                <td>
+                    <a class="btn btn-sm btn-primary" href="{{ path("depense_modifier",{"idEvenement":idEvenement,"idParticipants":d.participants.id,"id":d.id}) }}"> Modifier la dépense </a>
+                    <a class="btn btn-sm btn-danger" href="{{ path("depense_supprimer",{"idEvenement":idEvenement,"idParticipants":d.participants.id,"id":d.id}) }}"> Retirer la dépense </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a class="btn btn-sm btn-primary" href="{{ path("participants",{"idEvenement":idEvenement,"idParticipants":idParticipants}) }}"> Retour aux participants </a>
+    <a class="btn btn-sm btn-primary" href="{{ path("depense_ajouter",{"idEvenement":idEvenement,"idParticipants":idParticipants}) }}"> Ajouter une dépense</a>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Voulez-vous supprimer le participant {{ participants.nom }}?</h1>
+
+    {{ form(formulaire) }}
+
+    <a class="btn btn-warning" href="{{ path("participants",{"idEvenement":participants.evenement.id}) }}"> Retour aux participants</a>
+
+{% endblock %}

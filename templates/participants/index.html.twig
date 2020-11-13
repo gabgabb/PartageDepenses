@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Participants {% endblock %}
+
+{% block body %}
+
+    <h1>Les participants de l'événement {{ evenement.nom }}</h1>
+        <table class="table table-borderless table-striped">
+            <tr>
+                <th>#</th>
+                <th>Nom du participant</th>
+                <th>Quotient</th>
+                <th> Total dépensé</th>
+                <th>Montant à payer aux participants</th>
+                <th>Montant à reçevoir des participants</th>
+                <th>Actions</th>
+
+            </tr>
+
+        {% for p in participants %}
+            <tr>
+                <td>{{ p.id }} </td>
+                <td><a class="btn btn-primary" href="{{ path("depense",{"idEvenement":evenement.id,"idParticipants":p.id}) }}"> {{ p.nom}}</a></td>
+                <td>{{ p.quotient }}</td>
+                <td>{{ p.montantTot}}</td>
+
+                <td>{% set payer=p.montantTot-p.rapportQuotMont* p.quotient %}
+                    {% if payer <0 %}
+                        {{ payer|abs|number_format(2) }}
+                    {% else %}
+                        {% set payer=0 %}
+                        {{ payer|number_format(2)}}
+                    {% endif %}
+                </td>
+                <td>{% set collecte=p.montantTot-p.rapportQuotMont* p.quotient %}
+                    {% if collecte <0 %}
+                        {% set collecte=0 %}
+                        {{ collecte|number_format(2) }}
+                    {% else %}
+                        {{ collecte|number_format(2)}}
+                        {% endif %}
+                </td>
+
+                <td>
+                    <a class="btn btn-sm btn-primary" href="{{ path("participants_modifier",{"id":p.id, "idEvenement":evenement.id}) }}"> Modifier </a>
+                    <a class="btn btn-sm btn-danger" href="{{ path("participants_supprimer",{"id":p.id, "idEvenement":evenement.id}) }}"> Retirer le participant </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <a class="btn btn-sm btn-primary" href="{{ path("evenement") }}"> Retour aux événements</a>
+    <a class="btn btn-sm btn-primary" href="{{ path("participants_ajouter", {"idEvenement":evenement.id}) }}"> Ajouter un participant</a>
+
+{% endblock %}
+

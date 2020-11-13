@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Supprimer un événement !{% endblock %}
+
+{% block body %}
+    <h1>Voulez-vous vraiment supprimer l'événement {{ evenement.nom }} ?</h1>
+
+    {{ form(formulaire) }}
+
+    <a class="btn btn-warning" href="{{ path("evenement") }}"> Retour aux événements</a>
+
+{% endblock %}

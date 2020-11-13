@@ -1,0 +1,8 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Ajouter un participant ?</h1>
+    {{ form(formulaire) }}
+
+    <a class="btn btn-warning" href="{{ path("participants",{"idEvenement":idEvenement}) }}"> Retour aux participants</a>
+{% endblock %}

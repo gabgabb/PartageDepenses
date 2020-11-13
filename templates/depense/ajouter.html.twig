@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Ajouter une dépense ?</h1>
+    {{ form(formulaire) }}
+
+    <a class="btn btn-warning" href="{{ path("depense",{"idEvenement":idEvenement, "idParticipants":idParticipants}) }}"> Retour aux dépenses</a>
+
+{% endblock %}

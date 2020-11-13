@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Ajouter un événement !{% endblock %}
+
+{% block body %}
+    <h1>Ajouter un événement ? </h1>
+    {{ form(formulaire) }}
+
+   <a class="btn btn-warning" href="{{ path("evenement") }}"> Retour aux événements </a>
+
+{% endblock %}
